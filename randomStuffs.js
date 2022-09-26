@@ -41,3 +41,19 @@ charCount("Aaaabbbcccaasdcced");
 //note:
 //adding or removing element from the beginning of a non empty array is complicated because it involves reindexing
 //that is why shift and unshift is O(n) and push and pop is O(1)
+
+function sameArr(arr1, arr2){
+    if(arr1.length !== arr2.length){
+        return false;
+    } 
+      for(let i=0; i<arr1.length; i++){
+      correctIndex = arr2.indexOf(arr1[i] ** 2)
+      if(correctIndex === -1){
+          return false;
+      }
+          arr2.splice(correctIndex, 1)
+      }
+      return true
+  
+  }
+  same([1,2,1], [1,4,1])
